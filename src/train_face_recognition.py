@@ -4,7 +4,7 @@ import pickle
 from sklearn import neighbors
 
 faces_dir = './data/faces/'
-model_save_path = './models/face_recognition_model.pkl'
+model_save_path = '../models/face_recognition_model.pkl'
 n_neighbors = 2
 
 face_encodings = []

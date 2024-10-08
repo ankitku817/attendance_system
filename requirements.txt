@@ -1,0 +1,8 @@
+opencv-python
+face_recognition
+pandas
+tensorflow
+keras
+scikit-learn
+pillow
+dlib

@@ -8,10 +8,10 @@ from tensorflow.keras.models import load_model
 from datetime import datetime, time
 import face_recognition
 
-with open('models/face_recognition_model.pkl', 'rb') as f:
+with open('../models/face_recognition_model.pkl', 'rb') as f:
     face_recognition_model = pickle.load(f)
 
-emotion_model = load_model('models/emotion_model.h5')
+emotion_model = load_model('../models/emotion_model.h5')
 emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
 attendance = []
 logged_students = set()

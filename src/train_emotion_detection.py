@@ -2,8 +2,8 @@ import os
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras import layers, models
 
-train_dir = './data/emotions/train/'
-test_dir = './data/emotions/test/'
+train_dir = '../data/emotions/train/'
+test_dir = '../data/emotions/test/'
 
 train_datagen = ImageDataGenerator(
     rescale=1./255,
@@ -65,5 +65,5 @@ emotion_model.fit(
 test_loss, test_acc = emotion_model.evaluate(test_generator)
 print(f'Test accuracy: {test_acc}')
 
-emotion_model.save('./models/emotion_model.h5')
+emotion_model.save('../models/emotion_model.h5')
 print("Emotion detection model trained, evaluated, and saved.")
